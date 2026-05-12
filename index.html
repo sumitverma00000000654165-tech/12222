@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>Triveni Pathshala | Redirect</title>
+  <!-- Immediate redirect via meta refresh: 0 seconds (effectively instant, within 1 second) -->
+  <meta http-equiv="refresh" content="0; url=https://sumitverma00000000654165-tech.github.io/123/">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: linear-gradient(145deg, #f9f3e8 0%, #f4e5d3 100%);
+      font-family: 'Segoe UI', 'Poppins', system-ui, -apple-system, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    .redirect-card {
+      background: rgba(255, 250, 245, 0.9);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-radius: 2.5rem;
+      padding: 2.5rem 2rem;
+      max-width: 500px;
+      width: 100%;
+      box-shadow: 0 30px 50px rgba(140, 90, 40, 0.15), 0 10px 25px rgba(0, 0, 0, 0.08);
+      border: 1px solid rgba(255, 215, 150, 0.5);
+      transition: transform 0.2s ease;
+    }
+    .redirect-card:hover {
+      transform: translateY(-3px);
+    }
+    .school-icon {
+      font-size: 3.8rem;
+      margin-bottom: 0.5rem;
+      filter: drop-shadow(0 8px 12px rgba(180, 120, 40, 0.3));
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    .school-icon span {
+      background: #fff7ef;
+      border-radius: 50%;
+      padding: 12px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #5e3a1c;
+      letter-spacing: -0.5px;
+      margin-bottom: 0.3rem;
+      line-height: 1.2;
+    }
+    .subtitle {
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: #9b6b3d;
+      margin-bottom: 1.8rem;
+      border-bottom: 2px dashed #e7c7a7;
+      padding-bottom: 0.9rem;
+      display: inline-block;
+    }
+    .redirect-message {
+      background: #fff6ed;
+      border-radius: 60px;
+      padding: 1rem 1.5rem;
+      margin: 1.5rem 0 1.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      border: 1px solid #e6c7a2;
+      color: #4b2e15;
+      font-weight: 500;
+      font-size: 1.1rem;
+    }
+    .loader-dot {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background: #b57534;
+      border-radius: 50%;
+      margin: 0 4px;
+      animation: subtlePulse 1s infinite alternate;
+    }
+    .loader-dot:nth-child(2) { animation-delay: 0.2s; }
+    .loader-dot:nth-child(3) { animation-delay: 0.4s; }
+    @keyframes subtlePulse {
+      0% { opacity: 0.5; transform: scale(0.9); background: #d4934c; }
+      100% { opacity: 1; transform: scale(1.2); background: #b45f2a; }
+    }
+    .manual-link {
+      margin-top: 1.8rem;
+      font-size: 1rem;
+      color: #6b4a2c;
+    }
+    .manual-link a {
+      background: #fff2e1;
+      color: #8b4e1f;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 0.6rem 1.6rem;
+      border-radius: 50px;
+      display: inline-block;
+      transition: all 0.25s ease;
+      border: 1.5px solid #cc9f6b;
+      box-shadow: 0 4px 10px rgba(160, 100, 30, 0.1);
+      word-break: break-word;
+      margin: 0.4rem 0;
+    }
+    .manual-link a:hover {
+      background: #f7dbb8;
+      border-color: #a5682a;
+      color: #3b230c;
+      box-shadow: 0 8px 18px rgba(160, 100, 20, 0.2);
+      transform: scale(1.02);
+    }
+    .small-note {
+      color: #a4815f;
+      font-size: 0.85rem;
+      margin-top: 1.2rem;
+      opacity: 0.9;
+      font-style: italic;
+    }
+    .triveni-badge {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      margin-top: 1rem;
+      font-weight: 600;
+      color: #5d3a18;
+    }
+  </style>
+  <!-- Fallback JavaScript redirect: executes immediately (within 1 second) if meta refresh hasn't fired -->
+  <script>
+    (function() {
+      // Target URL – replace with your exact Triveni Pathshala custom redirect link
+      const redirectUrl = "https://sumitverma00000000654165-tech.github.io/123/";
+      
+      // Redirect instantly using location.replace (prevents back-button issues)
+      // This runs as soon as the script is parsed, typically within milliseconds.
+      // Wrapped in a function that triggers immediately.
+      function performRedirect() {
+        window.location.replace(redirectUrl);
+      }
+      
+      // Use setTimeout with 0ms to push to the event queue but still near-instant (<1s)
+      // Additionally, we add a DOMContentLoaded listener as a safety net.
+      setTimeout(performRedirect, 0);
+      
+      // If for some reason the script executes before the window is ready,
+      // we also attach a listener (though setTimeout covers most cases).
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', performRedirect);
+      }
+    })();
+  </script>
+</head>
+<body>
+  <div class="redirect-card">
+    <div class="school-icon">
+      <span>📘</span>
+      <span>🌿</span>
+      <span>🎓</span>
+    </div>
+    <h1>Triveni Pathshala</h1>
+    <div class="subtitle">· guiding light ·</div>
+    
+    <div class="redirect-message">
+      <span>⏳ Redirecting you now</span>
+      <span class="loader-dot"></span>
+      <span class="loader-dot"></span>
+      <span class="loader-dot"></span>
+    </div>
+    
+    <p style="color:#4f3a24; margin-bottom: 0.3rem; font-weight: 500;">
+      Taking you to the custom link in less than a second...
+    </p>
+    
+    <div class="manual-link">
+      <a href="https://sumitverma00000000654165-tech.github.io/123/" 
+         target="_self" 
+         rel="noopener noreferrer"
+         onclick="event.preventDefault(); window.location.replace('https://sumitverma00000000654165-tech.github.io/123/');">
+         ⚡ Click here if not redirected instantly
+      </a>
+    </div>
+    
+    <div class="small-note">
+      ✦ Triveni Pathshala · seamless connection ✦
+    </div>
+    <div class="triveni-badge">
+      <span>🪔</span> vidya · vivek · vikas <span>🪔</span>
+    </div>
+  </div>
+</body>
+</html>
