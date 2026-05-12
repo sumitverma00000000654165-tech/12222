@@ -1,211 +1,1409 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-  <title>Triveni Pathshala | Redirect</title>
-  <!-- Immediate redirect via meta refresh: 0 seconds (effectively instant, within 1 second) -->
-  <meta http-equiv="refresh" content="0; url=https://sumitverma00000000654165-tech.github.io/123/">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      background: linear-gradient(145deg, #f9f3e8 0%, #f4e5d3 100%);
-      font-family: 'Segoe UI', 'Poppins', system-ui, -apple-system, sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      margin: 0;
-      padding: 20px;
-      text-align: center;
-    }
-    .redirect-card {
-      background: rgba(255, 250, 245, 0.9);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border-radius: 2.5rem;
-      padding: 2.5rem 2rem;
-      max-width: 500px;
-      width: 100%;
-      box-shadow: 0 30px 50px rgba(140, 90, 40, 0.15), 0 10px 25px rgba(0, 0, 0, 0.08);
-      border: 1px solid rgba(255, 215, 150, 0.5);
-      transition: transform 0.2s ease;
-    }
-    .redirect-card:hover {
-      transform: translateY(-3px);
-    }
-    .school-icon {
-      font-size: 3.8rem;
-      margin-bottom: 0.5rem;
-      filter: drop-shadow(0 8px 12px rgba(180, 120, 40, 0.3));
-      display: flex;
-      justify-content: center;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-    .school-icon span {
-      background: #fff7ef;
-      border-radius: 50%;
-      padding: 12px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-    }
-    h1 {
-      font-size: 2.4rem;
-      font-weight: 700;
-      color: #5e3a1c;
-      letter-spacing: -0.5px;
-      margin-bottom: 0.3rem;
-      line-height: 1.2;
-    }
-    .subtitle {
-      font-size: 1.3rem;
-      font-weight: 500;
-      color: #9b6b3d;
-      margin-bottom: 1.8rem;
-      border-bottom: 2px dashed #e7c7a7;
-      padding-bottom: 0.9rem;
-      display: inline-block;
-    }
-    .redirect-message {
-      background: #fff6ed;
-      border-radius: 60px;
-      padding: 1rem 1.5rem;
-      margin: 1.5rem 0 1.8rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      flex-wrap: wrap;
-      border: 1px solid #e6c7a2;
-      color: #4b2e15;
-      font-weight: 500;
-      font-size: 1.1rem;
-    }
-    .loader-dot {
-      display: inline-block;
-      width: 10px;
-      height: 10px;
-      background: #b57534;
-      border-radius: 50%;
-      margin: 0 4px;
-      animation: subtlePulse 1s infinite alternate;
-    }
-    .loader-dot:nth-child(2) { animation-delay: 0.2s; }
-    .loader-dot:nth-child(3) { animation-delay: 0.4s; }
-    @keyframes subtlePulse {
-      0% { opacity: 0.5; transform: scale(0.9); background: #d4934c; }
-      100% { opacity: 1; transform: scale(1.2); background: #b45f2a; }
-    }
-    .manual-link {
-      margin-top: 1.8rem;
-      font-size: 1rem;
-      color: #6b4a2c;
-    }
-    .manual-link a {
-      background: #fff2e1;
-      color: #8b4e1f;
-      text-decoration: none;
-      font-weight: 700;
-      padding: 0.6rem 1.6rem;
-      border-radius: 50px;
-      display: inline-block;
-      transition: all 0.25s ease;
-      border: 1.5px solid #cc9f6b;
-      box-shadow: 0 4px 10px rgba(160, 100, 30, 0.1);
-      word-break: break-word;
-      margin: 0.4rem 0;
-    }
-    .manual-link a:hover {
-      background: #f7dbb8;
-      border-color: #a5682a;
-      color: #3b230c;
-      box-shadow: 0 8px 18px rgba(160, 100, 20, 0.2);
-      transform: scale(1.02);
-    }
-    .small-note {
-      color: #a4815f;
-      font-size: 0.85rem;
-      margin-top: 1.2rem;
-      opacity: 0.9;
-      font-style: italic;
-    }
-    .triveni-badge {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-      margin-top: 1rem;
-      font-weight: 600;
-      color: #5d3a18;
-    }
-  </style>
-  <!-- Fallback JavaScript redirect: executes immediately (within 1 second) if meta refresh hasn't fired -->
-  <script>
-    (function() {
-      // Target URL – replace with your exact Triveni Pathshala custom redirect link
-      const redirectUrl = "https://sumitverma00000000654165-tech.github.io/123/";
-      
-      // Redirect instantly using location.replace (prevents back-button issues)
-      // This runs as soon as the script is parsed, typically within milliseconds.
-      // Wrapped in a function that triggers immediately.
-      function performRedirect() {
-        window.location.replace(redirectUrl);
-      }
-      
-      // Use setTimeout with 0ms to push to the event queue but still near-instant (<1s)
-      // Additionally, we add a DOMContentLoaded listener as a safety net.
-      setTimeout(performRedirect, 0);
-      
-      // If for some reason the script executes before the window is ready,
-      // we also attach a listener (though setTimeout covers most cases).
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', performRedirect);
-      }
-    })();
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Triveni Pathsala • Learning Hub</title>
+    
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-messaging-compat.js"></script>
+    
+    <style>
+        :root {
+            --primary: #1e3c72;
+            --accent: #f97316;
+            --bg: #f8fafd;
+            --card-bg: #ffffff;
+            --text: #0f172a;
+            --text-soft: #475569;
+            --border: #e2e8f0;
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.03);
+            --shadow-card: 0 4px 14px rgba(0, 0, 0, 0.04);
+            --shadow-hover: 0 12px 28px rgba(0, 0, 0, 0.08);
+            --radius-sm: 14px;
+            --transition: 0.2s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            -webkit-font-smoothing: antialiased;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.5;
+        }
+
+        /* Header Styles */
+        .main-header {
+            background: white;
+            box-shadow: 0 1px 12px rgba(0, 0, 0, 0.04);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            background: var(--primary);
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            transition: transform 0.2s;
+        }
+
+        .logo-area:hover .logo-icon {
+            transform: scale(1.05);
+        }
+
+        .site-name {
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--primary);
+            letter-spacing: -0.3px;
+            white-space: nowrap;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Subscribe Button Styles */
+        .subscribe-btn {
+            background: #fef3c7;
+            border: 1.5px solid #f59e0b;
+            color: #92400e;
+            font-weight: 600;
+            font-size: 0.7rem;
+            padding: 7px 14px;
+            border-radius: 30px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: all 0.25s;
+            white-space: nowrap;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .subscribe-btn:hover {
+            background: #fde68a;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(245, 158, 11, 0.25);
+        }
+
+        .subscribe-btn.subscribed {
+            background: #dcfce7;
+            border-color: #10b981;
+            color: #065f46;
+        }
+
+        .subscribe-btn.subscribed i {
+            color: #10b981;
+        }
+
+        .subscribe-btn.blocked {
+            background: #fee2e2;
+            border-color: #ef4444;
+            color: #991b1b;
+            cursor: pointer;
+        }
+
+        /* Notification Bell Icon */
+        .notify-icon {
+            background: #f1f5f9;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            cursor: pointer;
+            position: relative;
+            font-size: 1.2rem;
+            transition: background 0.2s;
+            border: none;
+            font-family: inherit;
+        }
+
+        .notify-icon:hover {
+            background: #e2e8f0;
+        }
+
+        .notify-badge {
+            position: absolute;
+            top: -4px;
+            right: -4px;
+            background: #ef4444;
+            color: white;
+            font-size: 0.6rem;
+            font-weight: 700;
+            padding: 2px 7px;
+            border-radius: 30px;
+            border: 2px solid white;
+            min-width: 20px;
+            text-align: center;
+            display: none;
+        }
+
+        .notify-badge.visible {
+            display: block;
+            animation: badgePop 0.3s ease;
+        }
+
+        @keyframes badgePop {
+            0% { transform: scale(0.5); opacity: 0; }
+            70% { transform: scale(1.2); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        /* Notification Dropdown */
+        .notif-dropdown {
+            position: absolute;
+            top: 52px;
+            right: 10px;
+            background: white;
+            border-radius: 18px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+            width: 340px;
+            max-width: 92vw;
+            max-height: 420px;
+            overflow-y: auto;
+            z-index: 200;
+            border: 1px solid var(--border);
+            display: none;
+            animation: dropdownIn 0.25s cubic-bezier(0.22, 0.97, 0.36, 1.1);
+        }
+
+        .notif-dropdown.open {
+            display: block;
+        }
+
+        @keyframes dropdownIn {
+            from { opacity: 0; transform: translateY(-16px) scale(0.94); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        .notif-dropdown-header {
+            padding: 14px 16px;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 700;
+            font-size: 0.9rem;
+            position: sticky;
+            top: 0;
+            background: white;
+            z-index: 2;
+            border-radius: 18px 18px 0 0;
+        }
+
+        .notif-dropdown-header button {
+            background: none;
+            border: none;
+            color: #ef4444;
+            font-size: 0.7rem;
+            cursor: pointer;
+            font-weight: 600;
+            font-family: inherit;
+        }
+
+        .notif-dropdown-header button:hover {
+            text-decoration: underline;
+        }
+
+        .notif-item {
+            padding: 12px 16px;
+            border-bottom: 1px solid #f1f5f9;
+            cursor: pointer;
+            transition: background 0.15s;
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+        }
+
+        .notif-item:hover {
+            background: #f8fafd;
+        }
+
+        .notif-item.unread {
+            background: #fffbeb;
+            border-left: 3px solid #f59e0b;
+        }
+
+        .notif-item .notif-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #f59e0b;
+            flex-shrink: 0;
+            margin-top: 5px;
+        }
+
+        .notif-item .notif-content {
+            flex: 1;
+        }
+
+        .notif-item .notif-title {
+            font-weight: 600;
+            font-size: 0.8rem;
+            color: var(--text);
+        }
+
+        .notif-item .notif-body {
+            font-size: 0.7rem;
+            color: var(--text-soft);
+            margin-top: 2px;
+        }
+
+        .notif-item .notif-time {
+            font-size: 0.6rem;
+            color: #94a3b8;
+            margin-top: 4px;
+        }
+
+        .notif-empty {
+            text-align: center;
+            padding: 30px;
+            color: #94a3b8;
+            font-size: 0.8rem;
+        }
+
+        .notif-empty i {
+            font-size: 2rem;
+            display: block;
+            margin-bottom: 8px;
+            color: #cbd5e1;
+        }
+
+        /* Toast Styles */
+        .toast-container {
+            position: fixed;
+            top: 16px;
+            right: 16px;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 380px;
+            width: calc(100% - 32px);
+        }
+
+        .toast {
+            background: white;
+            border-radius: 16px;
+            padding: 14px 16px;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            border: 1px solid #e2e8f0;
+            animation: slideIn 0.3s ease;
+            cursor: pointer;
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(100%); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .toast-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .toast-icon.info { background: #eff6ff; color: #3b82f6; }
+        .toast-icon.success { background: #ecfdf5; color: #10b981; }
+        .toast-icon.warning { background: #fffbeb; color: #f59e0b; }
+        .toast-icon.error { background: #fef2f2; color: #ef4444; }
+
+        .toast-content { flex: 1; min-width: 0; }
+        .toast-title { font-weight: 700; font-size: 0.85rem; color: var(--text); margin-bottom: 2px; }
+        .toast-body { font-size: 0.75rem; color: var(--text-soft); line-height: 1.3; }
+
+        /* Modal Styles */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(6px);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal {
+            background: white;
+            border-radius: 24px;
+            max-width: 400px;
+            width: 90%;
+            padding: 28px 22px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .modal h3 {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .modal p {
+            color: #64748b;
+            margin-bottom: 16px;
+            font-size: 0.85rem;
+        }
+
+        .modal input {
+            width: 100%;
+            padding: 12px 16px;
+            font-size: 0.9rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 40px;
+            outline: none;
+            font-family: inherit;
+        }
+
+        .modal input:focus {
+            border-color: #f97316;
+        }
+
+        .modal button {
+            background: var(--accent);
+            border: none;
+            color: white;
+            font-weight: 700;
+            padding: 12px 20px;
+            border-radius: 40px;
+            width: 100%;
+            margin-top: 16px;
+            cursor: pointer;
+            transition: background 0.2s;
+            font-family: inherit;
+        }
+
+        .modal button:hover {
+            background: #e2620e;
+        }
+
+        .modal .secondary-btn {
+            background: #f1f5f9;
+            color: #475569;
+            margin-top: 8px;
+        }
+
+        .modal .secondary-btn:hover {
+            background: #e2e8f0;
+        }
+
+        /* Settings Guide Styles */
+        .settings-steps {
+            text-align: left;
+            list-style: none;
+            padding: 0;
+            margin: 12px 0;
+        }
+
+        .settings-steps li {
+            padding: 6px 0;
+            font-size: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .step-number {
+            background: #f59e0b;
+            color: white;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        /* Main Content Styles */
+        .main-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px 20px 40px;
+            width: 100%;
+            flex: 1;
+        }
+
+        .welcome-message {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: 500;
+            color: var(--text-soft);
+            margin-bottom: 18px;
+            font-size: 0.95rem;
+            padding: 6px 0;
+        }
+
+        .welcome-message i {
+            color: #f59e0b;
+            font-size: 1.3rem;
+        }
+
+        .greeting-name {
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        /* Slider Styles */
+        .slider-section {
+            margin: 0 0 20px;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+            background: #fff;
+        }
+
+        .slider-container {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .slides-wrapper {
+            display: flex;
+            transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1.0);
+        }
+
+        .slide {
+            flex: 0 0 100%;
+            min-height: 200px;
+            background-size: cover;
+            background-position: center;
+            background-color: #e2e8f0;
+        }
+
+        .dots {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            padding: 12px 0 8px;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            background: #cbd5e1;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .dot.active {
+            background: var(--accent);
+            width: 24px;
+        }
+
+        .dot:hover {
+            background: #f97316;
+            transform: scale(1.3);
+        }
+
+        /* Resource Grid Styles */
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 12px;
+            margin-top: 14px;
+            margin-bottom: 10px;
+        }
+
+        .resource-item {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            padding: 20px 10px;
+            text-decoration: none;
+            color: var(--text);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: all 0.25s;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+        }
+
+        .resource-item:hover {
+            border-color: #f97316;
+            background: #fffaf5;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
+        }
+
+        .resource-icon {
+            font-size: 1.7rem;
+            color: var(--primary);
+            margin-bottom: 8px;
+            transition: color 0.2s;
+        }
+
+        .resource-item:hover .resource-icon {
+            color: #f97316;
+        }
+
+        .resource-label {
+            font-weight: 600;
+            font-size: 0.8rem;
+            line-height: 1.2;
+            margin-bottom: 4px;
+        }
+
+        .resource-tag {
+            font-size: 0.6rem;
+            background: #f97316;
+            color: white;
+            padding: 3px 9px;
+            border-radius: 20px;
+            margin-top: 6px;
+            font-weight: 600;
+        }
+
+        /* Footer Styles */
+        .footer-nav {
+            background: white;
+            border-top: 1px solid var(--border);
+            padding: 16px 20px;
+            margin-top: auto;
+        }
+
+        .footer-items {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            text-align: center;
+        }
+
+        .footer-item {
+            cursor: pointer;
+            color: #475569;
+            font-weight: 500;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            padding: 8px 10px;
+            border-radius: 12px;
+            transition: 0.2s;
+            font-size: 0.7rem;
+        }
+
+        .footer-item i {
+            font-size: 1.2rem;
+            color: var(--primary);
+            transition: color 0.2s;
+        }
+
+        .footer-item:hover {
+            color: #f97316;
+            background: #fef7ee;
+        }
+
+        .footer-item:hover i {
+            color: #f97316;
+        }
+
+        .copyright {
+            text-align: center;
+            font-size: 0.65rem;
+            color: #94a3b8;
+            margin-top: 12px;
+        }
+
+        .chat-whatsapp {
+            position: relative;
+        }
+
+        .chat-whatsapp::after {
+            content: '💬';
+            position: absolute;
+            top: -6px;
+            right: -4px;
+            font-size: 0.7rem;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 500px) {
+            .slide { min-height: 160px; }
+            .resource-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+            .resource-item { padding: 14px 6px; }
+            .resource-icon { font-size: 1.3rem; }
+            .resource-label { font-size: 0.7rem; }
+            .site-name { font-size: 0.85rem; }
+            .subscribe-btn { font-size: 0.6rem; padding: 6px 10px; }
+            .toast-container { right: 6px; left: 6px; max-width: none; width: auto; }
+        }
+
+        @media (min-width: 501px) and (max-width: 700px) {
+            .slide { min-height: 200px; }
+            .resource-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+
+        @media (min-width: 701px) {
+            .slide { min-height: 240px; }
+            .resource-grid { grid-template-columns: repeat(4, 1fr); }
+        }
+    </style>
 </head>
 <body>
-  <div class="redirect-card">
-    <div class="school-icon">
-      <span>📘</span>
-      <span>🌿</span>
-      <span>🎓</span>
+    <!-- Header -->
+    <div class="main-header">
+        <div class="header-container">
+            <div class="header-left">
+                <div class="logo-area" onclick="window.location.href='/'">
+                    <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <span class="site-name">Triveni Pathsala</span>
+                </div>
+            </div>
+            <div class="header-actions">
+                <button class="subscribe-btn" id="subscribeBtn">
+                    <i class="fas fa-bell-slash"></i> <span>Subscribe</span>
+                </button>
+                <button class="notify-icon" id="notificationBtn" title="Notifications">
+                    <i class="fas fa-bell"></i>
+                    <span class="notify-badge" id="notifyBadge">0</span>
+                </button>
+            </div>
+        </div>
+        <!-- Notification Dropdown -->
+        <div class="notif-dropdown" id="notifDropdown">
+            <div class="notif-dropdown-header">
+                <span><i class="fas fa-bell"></i> Notifications</span>
+                <button id="clearAllNotifs">Clear All</button>
+            </div>
+            <div id="notifDropdownBody">
+                <div class="notif-empty"><i class="fas fa-inbox"></i> No notifications yet</div>
+            </div>
+        </div>
     </div>
-    <h1>Triveni Pathshala</h1>
-    <div class="subtitle">· guiding light ·</div>
-    
-    <div class="redirect-message">
-      <span>⏳ Redirecting you now</span>
-      <span class="loader-dot"></span>
-      <span class="loader-dot"></span>
-      <span class="loader-dot"></span>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="welcome-message">
+            <i class="fas fa-hand-peace"></i>
+            <span>नमस्ते, <span class="greeting-name" id="greetingUser">Student</span></span>
+        </div>
+
+        <!-- Slider Section -->
+        <div class="slider-section">
+            <div class="slider-container" id="sliderContainer">
+                <div class="slides-wrapper" id="slidesWrapper"></div>
+            </div>
+            <div class="dots" id="dotsContainer"></div>
+        </div>
+
+        <!-- Resource Grid -->
+        <div class="resource-grid" id="resourceGrid"></div>
     </div>
-    
-    <p style="color:#4f3a24; margin-bottom: 0.3rem; font-weight: 500;">
-      Taking you to the custom link in less than a second...
-    </p>
-    
-    <div class="manual-link">
-      <a href="https://sumitverma00000000654165-tech.github.io/123/" 
-         target="_self" 
-         rel="noopener noreferrer"
-         onclick="event.preventDefault(); window.location.replace('https://sumitverma00000000654165-tech.github.io/123/');">
-         ⚡ Click here if not redirected instantly
-      </a>
+
+    <!-- Footer -->
+    <div class="footer-nav">
+        <div class="footer-items">
+            <div class="footer-item" data-link="/alpha-home">
+                <i class="fas fa-home"></i><span>Home</span>
+            </div>
+            <div class="footer-item" data-link="/my-purchases">
+                <i class="fas fa-shopping-bag"></i><span>My Purchases</span>
+            </div>
+            <div class="footer-item chat-whatsapp" data-link="whatsapp">
+                <i class="fab fa-whatsapp"></i><span>Chat</span>
+            </div>
+        </div>
+        <div class="copyright">© 2026 Triveni Pathsala • Made with ❤️ for students</div>
     </div>
-    
-    <div class="small-note">
-      ✦ Triveni Pathshala · seamless connection ✦
+
+    <!-- Name Input Modal -->
+    <div class="modal-overlay" id="nameModal" style="display: none;">
+        <div class="modal">
+            <div style="font-size:2.4rem; color:#f97316; margin-bottom:6px;">
+                <i class="fas fa-user-astronaut"></i>
+            </div>
+            <h3>Welcome! 👋</h3>
+            <p>Enter your name to personalize your dashboard</p>
+            <input type="text" id="studentNameInput" placeholder="Your name" autocomplete="off">
+            <button id="submitNameBtn">Continue</button>
+        </div>
     </div>
-    <div class="triveni-badge">
-      <span>🪔</span> vidya · vivek · vikas <span>🪔</span>
-    </div>
-  </div>
+
+    <script>
+        // ==================== FIREBASE CONFIGURATION ====================
+        const firebaseConfig = {
+            apiKey: "AIzaSyBeZl52HEWGz-vE72QZ5taznvpYTfq3QUk",
+            authDomain: "login-and-reg-5728d.firebaseapp.com",
+            databaseURL: "https://login-and-reg-5728d-default-rtdb.firebaseio.com",
+            projectId: "login-and-reg-5728d",
+            storageBucket: "login-and-reg-5728d.firebasestorage.app",
+            messagingSenderId: "435846403197",
+            appId: "1:435846403197:web:d6a05a55e40839d15dcd14"
+        };
+
+        // Initialize Firebase
+        let database;
+        let messaging;
+        
+        try {
+            if (!firebase.apps.length) {
+                firebase.initializeApp(firebaseConfig);
+                console.log('✅ Firebase initialized');
+            }
+            database = firebase.database();
+            messaging = firebase.messaging();
+            console.log('✅ Firebase services ready');
+        } catch (error) {
+            console.error('❌ Firebase init error:', error);
+        }
+
+        // ==================== TOAST SYSTEM ====================
+        function showToast(title, message, type = 'info') {
+            const container = document.getElementById('toastContainer');
+            const toast = document.createElement('div');
+            toast.className = 'toast';
+            
+            let iconHtml = 'fa-info-circle';
+            let iconClass = 'info';
+            
+            switch(type) {
+                case 'success':
+                    iconHtml = 'fa-check-circle';
+                    iconClass = 'success';
+                    break;
+                case 'warning':
+                    iconHtml = 'fa-exclamation-triangle';
+                    iconClass = 'warning';
+                    break;
+                case 'error':
+                    iconHtml = 'fa-times-circle';
+                    iconClass = 'error';
+                    break;
+            }
+            
+            toast.innerHTML = `
+                <div class="toast-icon ${iconClass}">
+                    <i class="fas ${iconHtml}"></i>
+                </div>
+                <div class="toast-content">
+                    <div class="toast-title">${title}</div>
+                    <div class="toast-body">${message}</div>
+                </div>
+            `;
+            
+            container.appendChild(toast);
+            
+            setTimeout(() => {
+                if (toast.parentElement) {
+                    toast.style.opacity = '0';
+                    toast.style.transform = 'translateX(100%)';
+                    toast.style.transition = 'all 0.3s ease';
+                    setTimeout(() => { if (toast.parentElement) toast.remove(); }, 300);
+                }
+            }, 4000);
+            
+            toast.addEventListener('click', () => {
+                if (toast.parentElement) {
+                    toast.style.opacity = '0';
+                    toast.style.transform = 'translateX(100%)';
+                    toast.style.transition = 'all 0.3s ease';
+                    setTimeout(() => { if (toast.parentElement) toast.remove(); }, 300);
+                }
+            });
+        }
+
+        // ==================== NOTIFICATION HISTORY ====================
+        const NOTIF_HISTORY_KEY = 'triveni_notif_history';
+        const LAST_SEEN_KEY = 'triveni_last_seen_timestamp';
+        
+        function getNotifHistory() {
+            try { return JSON.parse(localStorage.getItem(NOTIF_HISTORY_KEY) || '[]'); }
+            catch (e) { return []; }
+        }
+        
+        function saveNotifHistory(history) {
+            try { localStorage.setItem(NOTIF_HISTORY_KEY, JSON.stringify(history.slice(0, 50))); }
+            catch (e) { console.error('Save history error:', e); }
+        }
+        
+        function getLastSeenTimestamp() {
+            try { return parseInt(localStorage.getItem(LAST_SEEN_KEY) || '0'); }
+            catch (e) { return 0; }
+        }
+        
+        function setLastSeenTimestamp(ts) {
+            try { localStorage.setItem(LAST_SEEN_KEY, String(ts)); }
+            catch (e) { console.error('Set timestamp error:', e); }
+        }
+        
+        function addToNotifHistory(notif) {
+            const history = getNotifHistory();
+            history.unshift({
+                title: notif.title,
+                body: notif.body,
+                timestamp: notif.timestamp || Date.now(),
+                read: false
+            });
+            saveNotifHistory(history);
+            updateBadge();
+            renderNotifDropdown();
+        }
+        
+        function updateBadge() {
+            const badge = document.getElementById('notifyBadge');
+            const history = getNotifHistory();
+            const unreadCount = history.filter(n => !n.read).length;
+            
+            if (unreadCount > 0) {
+                badge.textContent = unreadCount > 99 ? '99+' : String(unreadCount);
+                badge.classList.add('visible');
+            } else {
+                badge.classList.remove('visible');
+            }
+        }
+        
+        function renderNotifDropdown() {
+            const body = document.getElementById('notifDropdownBody');
+            const history = getNotifHistory();
+            
+            if (history.length === 0) {
+                body.innerHTML = '<div class="notif-empty"><i class="fas fa-inbox"></i> No notifications yet</div>';
+                return;
+            }
+            
+            body.innerHTML = history.slice(0, 20).map((n, i) => {
+                const timeStr = n.timestamp ? new Date(n.timestamp).toLocaleString('en-IN', {
+                    day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit'
+                }) : '';
+                const unreadClass = n.read ? '' : 'unread';
+                const dotOrNot = n.read ? '' : '<div class="notif-dot"></div>';
+                
+                return `
+                    <div class="notif-item ${unreadClass}" data-idx="${i}">
+                        ${dotOrNot}
+                        <div class="notif-content">
+                            <div class="notif-title">${escapeHtml(n.title)}</div>
+                            <div class="notif-body">${escapeHtml(n.body)}</div>
+                            <div class="notif-time">${timeStr}</div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+        
+        function markAllAsRead() {
+            const history = getNotifHistory();
+            history.forEach(n => n.read = true);
+            saveNotifHistory(history);
+            updateBadge();
+            renderNotifDropdown();
+        }
+        
+        function clearAllNotifs() {
+            saveNotifHistory([]);
+            updateBadge();
+            renderNotifDropdown();
+        }
+        
+        function escapeHtml(str) {
+            if (!str) return '';
+            const div = document.createElement('div');
+            div.textContent = str;
+            return div.innerHTML;
+        }
+
+        // ==================== NOTIFICATION DROPDOWN TOGGLE ====================
+        const notifDropdown = document.getElementById('notifDropdown');
+        const notificationBtn = document.getElementById('notificationBtn');
+        
+        notificationBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isOpen = notifDropdown.classList.contains('open');
+            if (isOpen) {
+                notifDropdown.classList.remove('open');
+            } else {
+                notifDropdown.classList.add('open');
+                markAllAsRead();
+                renderNotifDropdown();
+            }
+        });
+        
+        document.getElementById('clearAllNotifs').addEventListener('click', (e) => {
+            e.stopPropagation();
+            clearAllNotifs();
+        });
+        
+        document.addEventListener('click', (e) => {
+            if (!notifDropdown.contains(e.target) && e.target !== notificationBtn && !notificationBtn.contains(e.target)) {
+                notifDropdown.classList.remove('open');
+            }
+        });
+
+        // ==================== FIREBASE REAL-TIME NOTIFICATION LISTENER ====================
+        function setupFirebaseListeners() {
+            if (!database) {
+                console.warn('⚠️ Database not initialized');
+                return;
+            }
+            
+            const lastSeenTs = getLastSeenTimestamp();
+            
+            // Listen for global notifications
+            const allRef = database.ref('notifications/all');
+            allRef.on('child_added', (snap) => {
+                const notif = snap.val();
+                if (notif && notif.title && notif.body) {
+                    const notifTs = notif.timestamp || 0;
+                    console.log('📨 New notification received:', notif.title);
+                    
+                    // Show toast notification
+                    showToast(notif.title, notif.body, 'info');
+                    
+                    // Add to history
+                    addToNotifHistory({
+                        title: notif.title,
+                        body: notif.body,
+                        timestamp: notifTs
+                    });
+                    
+                    // Update last seen timestamp
+                    if (notifTs > getLastSeenTimestamp()) {
+                        setLastSeenTimestamp(notifTs);
+                    }
+                }
+            });
+            
+            // Listen for personal notifications
+            const studentName = localStorage.getItem('alphaStudentName') || 'Guest';
+            const studentKey = studentName.replace(/[.#$[\]]/g, '_').replace(/\s/g, '_');
+            const personalRef = database.ref(`notifications/student_${studentKey}`);
+            
+            personalRef.on('child_added', (snap) => {
+                const notif = snap.val();
+                if (notif && notif.title && notif.body) {
+                    const notifTs = notif.timestamp || 0;
+                    console.log('📩 Personal notification received:', notif.title);
+                    
+                    showToast('📩 ' + notif.title, notif.body, 'warning');
+                    
+                    addToNotifHistory({
+                        title: '📩 ' + notif.title,
+                        body: notif.body,
+                        timestamp: notifTs
+                    });
+                    
+                    if (notifTs > getLastSeenTimestamp()) {
+                        setLastSeenTimestamp(notifTs);
+                    }
+                }
+            });
+            
+            console.log('✅ Firebase listeners active for:', studentName);
+            
+            // Set initial timestamp if first time
+            if (lastSeenTs === 0) {
+                allRef.orderByChild('timestamp').limitToLast(1).once('value', (snap) => {
+                    if (snap.exists()) {
+                        const vals = Object.values(snap.val());
+                        if (vals.length > 0 && vals[0].timestamp) {
+                            setLastSeenTimestamp(vals[0].timestamp);
+                        }
+                    } else {
+                        setLastSeenTimestamp(Date.now());
+                    }
+                });
+            }
+        }
+
+        // ==================== SUBSCRIBE BUTTON ====================
+        function updateSubscribeButton() {
+            const btn = document.getElementById('subscribeBtn');
+            const icon = btn.querySelector('i');
+            const span = btn.querySelector('span');
+            
+            if (!('Notification' in window)) {
+                btn.className = 'subscribe-btn blocked';
+                icon.className = 'fas fa-bell-slash';
+                span.textContent = 'Not Supported';
+                return;
+            }
+            
+            const permission = Notification.permission;
+            
+            switch(permission) {
+                case 'granted':
+                    btn.className = 'subscribe-btn subscribed';
+                    icon.className = 'fas fa-bell';
+                    span.textContent = 'Subscribed';
+                    break;
+                case 'denied':
+                    btn.className = 'subscribe-btn blocked';
+                    icon.className = 'fas fa-bell-slash';
+                    span.textContent = 'Blocked';
+                    break;
+                default:
+                    btn.className = 'subscribe-btn';
+                    icon.className = 'fas fa-bell-slash';
+                    span.textContent = 'Subscribe';
+            }
+        }
+        
+        document.getElementById('subscribeBtn').addEventListener('click', async () => {
+            const permission = Notification.permission;
+            
+            if (permission === 'granted') {
+                showToast('✅ Already Subscribed', 'You are receiving notifications!', 'success');
+                return;
+            }
+            
+            if (permission === 'denied') {
+                // DIRECT REDIRECT TO CHROME NOTIFICATION SETTINGS
+                showToast('🔧 Opening Settings...', 'Redirecting to Chrome notification settings...', 'info');
+                
+                // Multiple methods to open Chrome notification settings
+                setTimeout(() => {
+                    // Method 1: Chrome settings URL
+                    window.location.href = 'chrome://settings/content/notifications';
+                    
+                    // Method 2: Try site-specific settings
+                    setTimeout(() => {
+                        const origin = window.location.origin;
+                        window.open(`chrome://settings/content/siteDetails?site=${origin}`, '_blank');
+                    }, 500);
+                    
+                    // Method 3: Show manual instructions as backup
+                    setTimeout(() => {
+                        alert('To enable notifications:\n\n1. Go to Chrome Settings\n2. Privacy & Security → Site Settings\n3. Notifications\n4. Find this site and select "Allow"\n5. Come back and refresh');
+                    }, 1500);
+                }, 300);
+                
+                return;
+            }
+            
+            // Request permission
+            try {
+                const result = await Notification.requestPermission();
+                
+                if (result === 'granted') {
+                    showToast('✅ Enabled!', 'You will now receive notifications.', 'success');
+                    
+                    // Send test notification
+                    setTimeout(() => {
+                        new Notification('Triveni Pathsala', {
+                            body: 'Welcome! Notifications are working perfectly! 🔔',
+                            icon: 'https://cdn-icons-png.flaticon.com/512/3135/3135810.png'
+                        });
+                    }, 1000);
+                    
+                    // Setup Firebase listeners
+                    setupFirebaseListeners();
+                    
+                } else if (result === 'denied') {
+                    showToast('❌ Blocked', 'Redirecting to settings...', 'error');
+                    
+                    // Redirect to Chrome notification settings
+                    setTimeout(() => {
+                        window.location.href = 'chrome://settings/content/notifications';
+                    }, 1000);
+                    
+                } else {
+                    showToast('⚠️ Dismissed', 'Please allow notifications to receive updates.', 'warning');
+                }
+                
+                updateSubscribeButton();
+                
+            } catch (error) {
+                console.error('Permission error:', error);
+                
+                // Fallback: Open Chrome settings
+                setTimeout(() => {
+                    window.location.href = 'chrome://settings/content/notifications';
+                }, 500);
+            }
+        });
+
+        // ==================== NAME MODAL ====================
+        function initNameModal() {
+            const storedName = localStorage.getItem('alphaStudentName');
+            
+            if (!storedName || storedName.trim() === '') {
+                const modal = document.getElementById('nameModal');
+                modal.style.display = 'flex';
+                
+                const input = document.getElementById('studentNameInput');
+                const submitBtn = document.getElementById('submitNameBtn');
+                
+                setTimeout(() => input.focus(), 100);
+                
+                function saveName() {
+                    let name = input.value.trim() || 'Student';
+                    localStorage.setItem('alphaStudentName', name);
+                    document.getElementById('greetingUser').textContent = name;
+                    modal.style.display = 'none';
+                    
+                    showToast('Welcome! 👋', `Hello ${name}, happy learning!`, 'success');
+                    
+                    // Setup Firebase listeners after name is set
+                    setupFirebaseListeners();
+                }
+                
+                submitBtn.addEventListener('click', saveName);
+                input.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter') saveName();
+                });
+            } else {
+                document.getElementById('greetingUser').textContent = storedName;
+                // Setup Firebase listeners if name already exists
+                setupFirebaseListeners();
+            }
+        }
+
+        // ==================== IMAGE SLIDER ====================
+        function initSlider() {
+            const slidesData = [
+                { img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqlqupKpBStr-OjLdXyvxu2YpLUtmPGY6mYUQh8icare5CLaK9t70ZV_OIpyEfLfn4HevCZGHe3EFxnTZIOjA8HQ3kNoxwzARrtaYjF_PqqOLBvqKzPHvV08EwJDwrrNaYsC3o8HwXcGvjGCJ2b3EcKLnXkZBiulQ5zsNUH1AJGkcTqr-l1RLkqQKFDAJx/s853/im%201%20.gif" },
+                { img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwFfIrlUQv4QJH0iqy8rJyHRZZhpTYXbDhTycz8DWUHgiLStkFJIWRZuvkqadKCLp-5wYpbQ897LJQBpNnCqa-dxwpyMH8NpPmc32OQJaIrdEesvLTTcNvp2_WqI42YyRANPZfHIkXWerLMF78CHADDTfAC59SwAK3oR2e1Gi6R_qZBQRKivhuVjlBd-Y9/s853/Presentation2.gif" },
+                { img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrxwFLsFFpm1iO1ZSTSpzHPTCehdCw3M-YvEWYUwl5g7BvAzaBzmDnV7qXuLkY8ZWnAG9u32MAE-vDCnkHEQTxwefL3qYldp5vDXcwbC6rxf3Xgppqf2zuAelSqZe1YQAUMvOCwY_wD4dFFZn0CZZxwShbl00PGSsaPS2itb-B6WMdDLa7WMrU5DLPozMn/s853/ia%202.gif" }
+            ];
+            
+            const slidesWrapper = document.getElementById('slidesWrapper');
+            const dotsContainer = document.getElementById('dotsContainer');
+            
+            slidesWrapper.innerHTML = '';
+            dotsContainer.innerHTML = '';
+            
+            let currentIndex = 0;
+            const totalSlides = slidesData.length;
+            let autoSlideInterval;
+            
+            // Create slides
+            slidesData.forEach(slide => {
+                const slideDiv = document.createElement('div');
+                slideDiv.className = 'slide';
+                slideDiv.style.backgroundImage = `url('${slide.img}')`;
+                slidesWrapper.appendChild(slideDiv);
+            });
+            
+            // Create dots
+            for (let i = 0; i < totalSlides; i++) {
+                const dot = document.createElement('div');
+                dot.className = 'dot' + (i === 0 ? ' active' : '');
+                dot.addEventListener('click', () => {
+                    currentIndex = i;
+                    updateSlider();
+                    resetAutoSlide();
+                });
+                dotsContainer.appendChild(dot);
+            }
+            
+            function updateSlider() {
+                slidesWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
+                const dots = dotsContainer.querySelectorAll('.dot');
+                dots.forEach((dot, i) => {
+                    dot.classList.toggle('active', i === currentIndex);
+                });
+            }
+            
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % totalSlides;
+                updateSlider();
+            }
+            
+            function startAutoSlide() {
+                autoSlideInterval = setInterval(nextSlide, 5000);
+            }
+            
+            function resetAutoSlide() {
+                clearInterval(autoSlideInterval);
+                startAutoSlide();
+            }
+            
+            updateSlider();
+            startAutoSlide();
+            
+            // Touch support
+            let touchStartX = 0;
+            const sliderContainer = document.getElementById('sliderContainer');
+            
+            sliderContainer.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+                clearInterval(autoSlideInterval);
+            }, {passive: true});
+            
+            sliderContainer.addEventListener('touchend', (e) => {
+                const diff = touchStartX - e.changedTouches[0].screenX;
+                if (Math.abs(diff) > 50) {
+                    if (diff > 0) {
+                        currentIndex = (currentIndex + 1) % totalSlides;
+                    } else {
+                        currentIndex = currentIndex - 1;
+                        if (currentIndex < 0) currentIndex = totalSlides - 1;
+                    }
+                    updateSlider();
+                }
+                startAutoSlide();
+            });
+            
+            sliderContainer.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
+            sliderContainer.addEventListener('mouseleave', startAutoSlide);
+        }
+
+        // ==================== RESOURCE GRID ====================
+        function initResources() {
+            const resources = [
+                { label: "Student Section", icon: "fas fa-user-lock", link: "./register.html", tag: "" },
+                { label: "New Admission", icon: "fas fa-clipboard-list", link: "./addmision.html", tag: "2026" },
+                { label: "Students ID Card", icon: "fas fa-id-card", link: "./login.html", tag: "" },
+                { label: "Fee Payment", icon: "fas fa-qrcode", link: "./payment.html", tag: "Direct" },
+                { label: "Online Classes", icon: "fas fa-video", link: "./online-classes.html", tag: "Coming Soon" },
+                { label: "Books PDF", icon: "fas fa-book-open", link: "./books-pdf.html", tag: "NEW" },
+                { label: "Class Notes", icon: "fas fa-pencil-alt", link: "./class-notes.html", tag: "PDF" }
+            ];
+            
+            const grid = document.getElementById('resourceGrid');
+            grid.innerHTML = '';
+            
+            resources.forEach(item => {
+                const link = document.createElement('a');
+                link.href = item.link;
+                link.className = 'resource-item';
+                
+                let tagHtml = item.tag ? `<div class="resource-tag">${item.tag}</div>` : '';
+                
+                link.innerHTML = `
+                    <div class="resource-icon"><i class="${item.icon}"></i></div>
+                    <span class="resource-label">${item.label}</span>
+                    ${tagHtml}
+                `;
+                
+                grid.appendChild(link);
+            });
+        }
+
+        // ==================== FOOTER ====================
+        function initFooter() {
+            const footerItems = document.querySelectorAll('.footer-item');
+            
+            footerItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    const link = item.getAttribute('data-link');
+                    
+                    if (link === 'whatsapp') {
+                        const phoneNumber = '916202320527';
+                        const message = encodeURIComponent('Hello Triveni Pathsala! 👋 I need help.');
+                        window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+                    } else if (link) {
+                        window.location.href = link;
+                    }
+                });
+            });
+        }
+
+        // ==================== INITIALIZATION ====================
+        function initApp() {
+            console.log('🚀 Starting Triveni Pathsala...');
+            
+            try {
+                initNameModal();
+                initSlider();
+                initResources();
+                initFooter();
+                updateSubscribeButton();
+                updateBadge();
+                renderNotifDropdown();
+                
+                console.log('✅ All components initialized');
+                console.log('✅ Bell icon is visible on right side');
+                console.log('✅ Firebase notification listener ready');
+                console.log('✅ Click Subscribe for Chrome notification settings redirect');
+                
+            } catch (error) {
+                console.error('❌ Init error:', error);
+            }
+        }
+
+        // Start app when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initApp);
+        } else {
+            initApp();
+        }
+        
+        // Periodically check subscribe button state
+        setInterval(updateSubscribeButton, 3000);
+    </script>
 </body>
 </html>
